@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="app/app.js"></script>
+    <script src="app/directives/datagrid.js"></script>
+
+</head>
+<body>
+    <div ng-controller="mainController">
+        <test></test>
+        {{ message }}    
+        <input type="text" ng-value="message" ng-model="message">
+    </div>
+</body>
+</html>
