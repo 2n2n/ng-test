@@ -11,7 +11,12 @@
 </head>
 <body>
     <div ng-controller="mainController">
-        <test></test>
+        <test columns='cols'></test>
+        <form ng-submit="doThis(temp)">
+            <input type="text" ng-model="temp.field" placeholder="username">
+            <input type="text" ng-model="temp.value" placeholder="value">
+            <button type="submit">Submit</button>
+        </form>
         {{ message }}    
         <input type="text" ng-value="message" ng-model="message">
     </div>
